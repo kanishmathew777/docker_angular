@@ -1,8 +1,6 @@
 .lo_parent {
     display: flex;
-    height: 100%;
-    border: 2px solid blueviolet;
-    border-radius: 5px;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -10,7 +8,7 @@
 .lo_child {
     display: flex;
     height: 60%;
-    width: 60%;
+    width: 50%;
     text-align: left;
     border: 2px solid mediumslateblue;
     font-family: "Arial, Helvetica, sans-serif";
