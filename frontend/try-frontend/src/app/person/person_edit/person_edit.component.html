@@ -1,0 +1,11 @@
+<form #update_person="ngForm" (ngSubmit)="onEditSave(update_person.value)" novalidate>
+    <div class='field_labels'>
+        Firstname:
+        <input style='width:45%;' name="first_name" [(ngModel)]="first_name" ngModel required #first="ngModel">
+    </div>
+    <div class='field_labels'>
+        Lastname:
+        <input style='width:45%;' name="last_name" [(ngModel)]="last_name" ngModel>
+    </div>
+    <button style='float: left;' >Submit</button>
+</form>

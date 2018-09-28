@@ -1,0 +1,23 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
+
+.edit_button {
+    background-color: #008CBA;
+    border: 1px;
+    padding: 6px;
+    border-radius: 25px;
+    align-content: center;
+}
+
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+} */

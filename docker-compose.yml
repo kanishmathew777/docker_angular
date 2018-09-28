@@ -1,0 +1,54 @@
+version: '3.3'
+
+services:
+
+  postgres:
+    restart: always
+    build:
+      context: ./database/
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5435:5432"
+    networks:
+      - dock_net
+
+  backend:
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    links:
+      - postgres:postgres
+    command: bash -c "sleep 2 && cd /code/backend/login_project && python3.6 manage.py collectstatic --noinput -c && python3.6 manage.py makemigrations && python3.6 manage.py migrate && python3.6 admin.py && gunicorn --bind 0.0.0.0:8002 --workers 3 --reload --access-logfile /code/logs/gunicorn_app.log --error-logfile /code/logs/gunicorn_error.log login_project.wsgi"
+    volumes:
+      - .:/code
+    env_file:
+      - .env
+    ports:
+      - "8002:8002"
+    depends_on:
+      - postgres
+    networks:
+      - dock_net
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "85:80"
+    volumes:
+      - .:/code
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./logs/nginx:/var/log/nginx/
+    depends_on:
+      - backend
+    env_file:
+      - .env
+    networks:
+      - dock_net
+
+networks:
+  dock_net:
+      driver: bridge

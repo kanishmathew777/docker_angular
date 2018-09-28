@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/model.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/predict.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/vgg16_new_model/delete_layer.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/vgg16_new_model/new_model_creation.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/vgg16_new_model/plot_confusion_matrix.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/vgg16_new_model/predict_model.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/vgg16_new_model/train_model.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/classify_images/classification_tensor/vgg16_new_model/vgg16.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/model_creation/create_model.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/classifier/management/resources/training_default_model.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/classifier/tasks.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/classifier/views.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/icr_backend/settings/development.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/icr_backend/settings/production.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/icr_backend/urls.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/requirements.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

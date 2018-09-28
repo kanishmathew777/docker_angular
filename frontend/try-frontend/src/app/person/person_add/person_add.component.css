@@ -1,0 +1,53 @@
+.lo_parent {
+    display: flex;
+    height: 100%;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.lo_child {
+    display: flex;
+    height: 60%;
+    width: 60%;
+    text-align: left;
+    border: 2px solid mediumslateblue;
+    font-family: "Arial, Helvetica, sans-serif";
+    font-size: 30px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: left;
+    padding: 5px;
+}
+.label_design{
+    width: 100%;
+    background-color: gray;
+    text-align: left;
+    border-radius: 5px;
+}
+.input_field{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+.submit_button {
+    background-color: mediumslateblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.container{
+    width: 80%;
+    align-items: center;
+    display: inline-block;
+    padding: 5%;
+}

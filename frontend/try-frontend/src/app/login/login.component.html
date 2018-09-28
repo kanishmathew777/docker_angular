@@ -1,0 +1,18 @@
+<div class="lo_parent">
+    <div class="lo_child">
+        <div class="container">
+            <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+                <p>
+                    <label class="label_design">Username</label><br>
+                    <input type="text" class="input_field" name="username" placeholder="Username/Email" required ngModel></p>
+                <p>
+                    <label class="label_design">Password</label><br>
+                    <input type="password" class="input_field" name="password" placeholder="Password" required ngModel></p>
+                <input class="submit_button" type="submit" value="Login">
+            </form>
+            <div *ngIf="errors" class="alert alert-danger">
+                {{ errors.error.detail | json }} 
+            </div>
+        </div>
+    </div>
+</div>

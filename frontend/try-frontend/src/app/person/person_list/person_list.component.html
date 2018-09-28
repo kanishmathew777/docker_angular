@@ -1,0 +1,19 @@
+<table>
+        <tr>
+          <th *ngFor="let table_heading of table_headings">
+            {{ table_heading }}
+          </th>
+        </tr>
+        <tr *ngFor="let table_content of table_contents">
+          <td>
+              {{ table_content.id }}  
+          </td>
+          <td>
+              {{ table_content.first_name }}  
+          </td>
+          <td>
+              {{ table_content.last_name }}  
+          </td>
+          <button type="button" class="edit_button" (click)="edit_person(table_content)">Click Me!</button>
+        </tr>      
+</table>
