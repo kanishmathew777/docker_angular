@@ -4,6 +4,8 @@ import { PersonService } from '../person.services';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from "@angular/router";
 
+import { list_person } from '../../project_config/urls'
+
 @Component({
     selector: 'person_add',
     templateUrl: './person_add.component.html',
@@ -19,7 +21,7 @@ export class PersonAddComponent implements OnInit{
             data => {
                 console.log(data)
                 this.toaster.success("User added Successfully")
-                this.router.navigate(["/list_person"]);
+                this.router.navigate([`/${list_person}`]);
             },
             error => {
                 this.toaster.error("Failed to add person")

@@ -4,6 +4,8 @@ import { PersonService } from '../person.services'
 import { Router } from "@angular/router";
 import { ToastrService } from 'ngx-toastr';
 
+import { edit_person } from '../../project_config/urls'
+
 
 @Component({
     selector: 'person_list-cmp',
@@ -26,7 +28,7 @@ export class PersonListComponent implements OnInit{
         this.table_headings = ['id', 'first_name', 'last_name']
     }
     edit_person(person){
-        this.router.navigate(["/edit_person/", person.id, {first_name:person.first_name, 
+        this.router.navigate([`/${edit_person}/`, person.id, {first_name:person.first_name, 
                                                            last_name: person.last_name}]);
     }
 }

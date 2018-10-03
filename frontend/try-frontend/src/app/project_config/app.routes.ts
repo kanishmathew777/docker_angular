@@ -7,40 +7,35 @@ import { PersonListComponent } from '../person/person_list/person_list.component
 import { PersonEditComponent } from '../person/person_edit/person_edit.component';
 
 import { PageNotFoundComponent } from '../notfound.component';
-import { TabComponent } from '../tabs/tabs.component';
 import { AuthGuard } from '../auth/auth.guard';
+import * as urls from './urls';
 
 
 export const appRoutes: Routes = [
     {
-      path: 'login',
+      path: `${urls.login}`,
       component: LoginComponent,
       data: { title: 'Login' }
     },
     {
-        path: 'add_person',
+        path: `${urls.add_person}`,
         component: PersonAddComponent,
         data: { title: 'Add Person' }
     },
     {
-      path: 'list_person',
+      path: `${urls.list_person}`,
       component: PersonListComponent,
       data: { title: 'List Person' },
       canActivate: [AuthGuard]
     },
     {
-      path: 'edit_person/:id',
+      path: `${urls.edit_person}/:id`,
       component: PersonEditComponent,
       data: { title: 'List Person' }
     },
-    {
-      path: 'tab-component',
-      component: TabComponent,
-      data: { title: 'Tabs' }
-    },
     { 
       path: '',
-      redirectTo: '/login',
+      redirectTo: `${urls.login}/`,
       pathMatch: 'full'
     },
     { path: '**', component: PageNotFoundComponent }

@@ -18,7 +18,6 @@ export class TabComponent implements OnInit {
     constructor(private router: Router) { }
     ngOnInit() {
         this.href = this.router.url;
-        console.log(this.href)
     }
     goAddperson(){
         this.router.navigate(['add_person']);

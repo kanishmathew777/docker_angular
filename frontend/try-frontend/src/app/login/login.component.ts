@@ -6,6 +6,8 @@ import { throwError } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from "@angular/router";
 
+import { add_person } from '../project_config/urls'
+
 @Component({
     selector: 'login-cmp',
     templateUrl: './login.component.html',
@@ -32,7 +34,7 @@ export class LoginComponent implements OnInit {
                 console.log(data.data.token)
                 this.token = data.data.token
                 this.toaster.success("Logged in Successfully")
-                this.router.navigate(["/add_person"]);
+                this.router.navigate([`/${add_person}`]);
                 localStorage.setItem('token', this.token)
             },
             error => {

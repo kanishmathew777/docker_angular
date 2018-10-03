@@ -4,6 +4,8 @@ import { Router } from "@angular/router";
 import { ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
+import { list_person } from '../../project_config/urls'
+
 
 @Component({
     selector: 'person_edit-cmp',
@@ -30,7 +32,7 @@ export class PersonEditComponent implements OnInit{
         this.person_service.putUrl(details, this.id).subscribe(data => {
             console.log(data)
             this.toaster.success("Person updated Successfully")
-            this.router.navigate(["/list_person"]);
+            this.router.navigate([`${list_person}`]);
         },
         error => {
             this.toaster.error("Failed to add person")
