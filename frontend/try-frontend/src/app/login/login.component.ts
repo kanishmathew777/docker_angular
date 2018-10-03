@@ -38,7 +38,10 @@ export class LoginComponent implements OnInit {
             error => {
                 this.errors = error;
                 console.log(this.errors)
-                if (!Object.keys(this.errors.error.error).length)
+                if (this.errors.status==404){
+                    this.toaster.error('service unavailable', 'No Servce')
+                }
+                else if (!Object.keys(this.errors.error.error).length)
                     this.toaster.error(this.errors.error.detail.toUpperCase())
                 else {
                     for (let key in this.errors.error.error) {
@@ -53,7 +56,7 @@ export class LoginComponent implements OnInit {
             }
         )
     }
-    private handleError(error: HttpErrorResponse) {
-        return throwError(error.message);
-    }
+    // private handleError(error: HttpErrorResponse) {
+    //     return throwError(error.message);
+    // }
 }

@@ -29,7 +29,7 @@ export class PersonEditComponent implements OnInit{
     onEditSave(details){
         this.person_service.putUrl(details, this.id).subscribe(data => {
             console.log(data)
-            this.toaster.success('"User updated Successfully"')
+            this.toaster.success("Person updated Successfully")
             this.router.navigate(["/list_person"]);
         },
         error => {

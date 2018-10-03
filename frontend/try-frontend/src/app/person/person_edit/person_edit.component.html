@@ -1,4 +1,3 @@
-<tab-component></tab-component>
 <form #update_person="ngForm" (ngSubmit)="onEditSave(update_person.value)" novalidate>
     <div class='field_labels'>
         Firstname:
@@ -8,5 +7,5 @@
         Lastname:
         <input style='width:45%;' name="last_name" [(ngModel)]="last_name" ngModel>
     </div>
-    <button style='float: left;' >Submit</button>
+    <button style='float: left;' >Save</button>
 </form>
