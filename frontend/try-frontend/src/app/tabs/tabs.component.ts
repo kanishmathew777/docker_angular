@@ -18,14 +18,7 @@ export class TabComponent implements OnInit {
     constructor(private router: Router) { }
     ngOnInit() {
         this.href = this.router.url;
-        if (this.href == '/add_person'){
-            document.getElementById('add_person').style.color = "Blue"
-            document.getElementById('add_person').style.backgroundColor = '#F28836'
-        }
-        else if (this.href == '/list_person'){
-            document.getElementById('list_person').style.color = "Blue"
-            document.getElementById('list_person').style.backgroundColor = '#F28836'
-        }
+        console.log(this.href)
     }
     goAddperson(){
         this.router.navigate(['add_person']);

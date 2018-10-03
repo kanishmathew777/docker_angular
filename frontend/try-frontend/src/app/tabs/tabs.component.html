@@ -10,21 +10,8 @@
 
 
 <div class="tab">
-    <button id='add_person' (click)="goAddperson()" >Add Person</button>
-    <button id='list_person' (click)="goListperson()">List Person</button>
+    <button class='btn' [ngClass]="{'btn-actve': href === '/add_person'}" (click)="goAddperson()" >Add Person</button>
+    <button class='btn' [ngClass]="{'btn-actve': href === '/list_person'}" (click)="goListperson()" >List Person</button>
+    <!-- <button class='btn' [class.btn-actve]="href === '/add_person' && 'active'"  (click)="goAddperson()" >Add Person</button>
+    <button class='btn' [class.btn-actve]="href === '/list_person' && 'inactive'" (click)="goListperson()" >List Person</button> -->
 </div>
-<!-- <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-</script> -->
