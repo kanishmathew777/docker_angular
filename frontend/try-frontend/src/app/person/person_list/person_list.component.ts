@@ -25,7 +25,7 @@ export class PersonListComponent implements OnInit{
             error => {
                 this.toaster.error(error.error['detail'])} 
         )
-        this.table_headings = ['id', 'first_name', 'last_name']
+        this.table_headings = ['id', 'first name', 'last name', 'edit details']
     }
     edit_person(person){
         this.router.navigate([`/${edit_person}/`, person.id, {first_name:person.first_name, 

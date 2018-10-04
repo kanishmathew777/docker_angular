@@ -1,6 +1,8 @@
 import { Router } from "@angular/router";
 import { Component, OnInit } from '@angular/core';
 
+import {add_person, list_person} from '../project_config/urls'
+
 
 @Component({
     selector: 'tab-component',
@@ -20,9 +22,12 @@ export class TabComponent implements OnInit {
         this.href = this.router.url;
     }
     goAddperson(){
-        this.router.navigate(['add_person']);
+        this.router.navigate([`${add_person}`]);
     }
     goListperson(){
-        this.router.navigate(['list_person']);
+        this.router.navigate([`${list_person}`]);
+    }
+    applogout(){
+        
     }
 }
