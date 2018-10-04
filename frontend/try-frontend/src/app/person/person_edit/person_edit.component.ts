@@ -8,7 +8,7 @@ import { list_person } from '../../project_config/urls'
 
 
 @Component({
-    selector: 'person_edit-cmp',
+    selector: 'person-edit-cmp',
     templateUrl: './person_edit.component.html',
     styleUrls: ['./person_edit.component.css']
 })

@@ -31,3 +31,11 @@
     </tbody>
   </table>
 </div>
+<div class='edit_person' *ngIf="person_detail_update">
+    <h1>Edit User details</h1>
+    <person-edit-child-cmp 
+        [person]="person_details"
+        [person_detail_update]="person_detail_update"
+        (messageEvent)="receiveMessage(edit_complete)">
+    </person-edit-child-cmp>
+</div>

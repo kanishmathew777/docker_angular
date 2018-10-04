@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
 import { list_person } from '../../project_config/urls'
 
 @Component({
-    selector: 'person_add',
+    selector: 'person-add-cmp',
     templateUrl: './person_add.component.html',
     styleUrls: ['./person_add.component.css']
 })

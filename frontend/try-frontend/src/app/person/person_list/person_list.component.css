@@ -4,7 +4,7 @@ table{
     font-family: sans-serif;
     background: linear-gradient(45deg, #49a09d, #5f2c82);
     font-weight: 100;
-    /* table-layout: fixed; */
+    table-layout: fixed;
 }
 .tbl-header{
     background-color: rgba(0,0,0,0.3);
@@ -49,4 +49,8 @@ td{
 
 .edit_button:hover {
     background-color: rgba(255,255,255,0.9);
+}
+
+.edit_person{
+    width: 50%;
 }

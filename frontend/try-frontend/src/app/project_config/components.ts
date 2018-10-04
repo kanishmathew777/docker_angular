@@ -5,6 +5,7 @@ import { AppComponent } from '../app.component';
 import { PersonListComponent } from '../person/person_list/person_list.component';
 import { TabComponent } from '../tabs/tabs.component';
 import { PersonEditComponent } from '../person/person_edit/person_edit.component';
+import { PersonEditChildComponent } from '../person/person_edit_child/person_edit_child.component';
 
 export const component_list = [
     AppComponent,
@@ -13,5 +14,6 @@ export const component_list = [
     TabComponent,
     PersonAddComponent,
     PersonListComponent,
-    PersonEditComponent 
+    PersonEditComponent,
+    PersonEditChildComponent,
 ]
