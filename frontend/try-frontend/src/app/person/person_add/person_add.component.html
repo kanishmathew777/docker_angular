@@ -3,14 +3,14 @@
 <div class="lo_parent">
     <div class="lo_child">
         <div class="container">
-            <form #adduser = "ngForm" (ngSubmit) = "AddPersonSubmit(adduser.value)" >
-                    <p>
-                        <label class="label_design">First Name</label><br>
-                        <input type="text" class="input_field" name="first_name" placeholder="First Name" required ngModel></p>
-                    <p>
-                        <label class="label_design">Last Name</label><br>
-                        <input type="text" class="input_field" name="last_name" placeholder="Last Name" required ngModel></p>
-                    <input class="submit_button" type="submit" value="Add">
+            <form #adduser="ngForm" (ngSubmit)="AddPersonSubmit(adduser.value)">
+                <p>
+                    <label class="label_design">First Name</label><br>
+                    <input type="text" class="input_field" name="first_name" placeholder="First Name" required ngModel></p>
+                <p>
+                    <label class="label_design">Last Name</label><br>
+                    <input type="text" class="input_field" name="last_name" placeholder="Last Name" required ngModel></p>
+                <input class="submit_button" type="submit" value="Add">
             </form>
         </div>
     </div>

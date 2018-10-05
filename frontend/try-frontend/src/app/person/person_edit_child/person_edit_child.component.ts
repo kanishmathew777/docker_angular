@@ -18,7 +18,7 @@ export class PersonEditChildComponent implements OnInit{
                 private route: ActivatedRoute, private toaster: ToastrService) 
     {   
     }
-    @Input('person') person: any;
+    @Input('person') person_detail: any;
     @Input('person_detail_update') person_update: boolean;
     ngOnInit(){
     }
@@ -26,7 +26,7 @@ export class PersonEditChildComponent implements OnInit{
     @Output() messageEvent = new EventEmitter<boolean>();
 
     onEditSave(details){
-        this.person_service.putUrl(details, this.person.id).subscribe(data => {
+        this.person_service.putUrl(details, this.person_detail.id).subscribe(data => {
             this.person_update = false;
             this.messageEvent.emit(this.person_update)
             this.toaster.success("Person updated Successfully")
