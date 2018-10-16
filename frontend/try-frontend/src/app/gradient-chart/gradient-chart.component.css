@@ -1,0 +1,33 @@
+body{ 
+    background-color: ivory; 
+}
+.parent_canvas{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
+} 
+#lighten-canvas{
+    opacity: 0.1;
+    position: relative;
+}
+#darken-canvas{
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#display-number{
+    position: absolute;
+    width: 24px;
+    height: 55px;
+    font-family: OpenSans;
+    font-size: 40.4px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    transform: translate(-50%, -50%);
+}

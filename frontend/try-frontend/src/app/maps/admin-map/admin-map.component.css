@@ -1,0 +1,119 @@
+#wrapper{
+    padding: 31px 40px 37px 40px;
+    position: relative;
+}
+
+#googleMap {
+    height: 580px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    position: relative;
+   }
+#bg { 
+    position: absolute; 
+    width: 310px;
+    height: 301px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+    top: 197px; 
+    left: 809px;
+}
+
+#top-bg {
+    width: 310px;
+    height: 61px;
+    border-radius: 4px;
+    background-color: #2196f3;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+#Geofence-Name {
+    width: 1140px;
+    height: 22px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a6a6a6;
+    padding-top: 29px;
+    padding-right: 166px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+}
+
+#Boundary-Radius {
+    width: 180px;
+    height: 19px;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    padding-left: 20px;
+  }
+
+#displaykm {
+    width: 100px;
+    height: 27px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    padding-left: 20px;
+    padding-top: 8px;
+  }
+
+#save-radius{
+    width: 154px;
+    height: 32px;
+    opacity: 0.4;
+    border-radius: 16px;
+    background-color: #00b140;
+    margin-left: 130px;
+    margin-top: 38px;
+}
+
+.slider {
+    width: 270px;
+    height: 4px;
+    background: #d3d3d3;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #2196f3, #00b140);
+    margin-top: 24px;
+    margin-left: 20px;
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: #2196f3;
+}
+
+.Radius-Details {
+    width: 150px;
+    height: 19px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-top: 20px;
+  }

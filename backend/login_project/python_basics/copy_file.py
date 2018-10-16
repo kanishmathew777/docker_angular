@@ -17,7 +17,6 @@
 # print(deep)
 
 
-
 class A(object):
     print("A")
     def go(self):

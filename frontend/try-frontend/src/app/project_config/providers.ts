@@ -13,7 +13,7 @@ import { PersonService } from '../person/person.services';
 // export const providers_list = [MyserviceService, LoginService, BaseService, 
 //     PersonListService, PersonAddService, PersonEditService, PersonService]
 
-export const providers_list = [MyserviceService, LoginService, BaseService, 
+export const app_providers = [MyserviceService, LoginService, BaseService, 
     PersonService, Authservice, AuthGuard, {
         provide: HTTP_INTERCEPTORS,
         useClass: TokenInterceptorService,

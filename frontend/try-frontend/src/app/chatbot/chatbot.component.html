@@ -1,0 +1,11 @@
+<div class="chatbox">
+  <div class="messages">
+    <div *ngFor="let message of messages" >
+      {{ message.text }}
+    </div>
+  </div>
+  <div class="input_container">
+    <input type="text">
+    <button class="replybutton">Send</button>
+  </div>
+</div>

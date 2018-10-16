@@ -6,8 +6,11 @@ import { PersonListComponent } from '../person/person_list/person_list.component
 import { TabComponent } from '../tabs/tabs.component';
 import { PersonEditComponent } from '../person/person_edit/person_edit.component';
 import { PersonEditChildComponent } from '../person/person_edit_child/person_edit_child.component';
+import { ChatbotComponent } from '../chatbot/chatbot.component';
+import { GradientChartComponent } from '../gradient-chart/gradient-chart.component';
 
-export const component_list = [
+
+export const app_components = [
     AppComponent,
     PageNotFoundComponent,
     LoginComponent,
@@ -16,4 +19,6 @@ export const component_list = [
     PersonListComponent,
     PersonEditComponent,
     PersonEditChildComponent,
+    ChatbotComponent,
+    GradientChartComponent
 ]

@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/chat_application/models.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/login_project/settings.py">
           <value>
             <set />
@@ -248,12 +253,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/classifier/tasks.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/classifier/views.py">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/icr_backend/settings/production.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/icr_maximus/maximus_poc_icr_handwriting_recognition/backend/icr_backend/requirements.txt">
           <value>
             <set />
           </value>
